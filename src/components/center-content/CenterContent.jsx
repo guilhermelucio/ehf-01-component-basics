@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./CenterContent.scss";
 
 export const CenterContent = ({ children, width, height }) => (
@@ -10,6 +11,15 @@ export const CenterContent = ({ children, width, height }) => (
 CenterContent.defaultProps = {
   width: "100%",
   height: "100vh"
+};
+
+CenterContent.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
 };
 
 export default CenterContent;

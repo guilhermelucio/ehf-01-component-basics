@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-black: #0e0e0e;
+  --color-off-black: #222;
+  --color-dark-gray: #333;
+  --color-mid-gray: #999;
+  --color-light-gray: #eee;
+  --color-off-white: #f4f4f4;
+  --color-white: #fdfdfd;
+
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1.6rem;
+  --spacing-md: 2.4rem;
+  --spacing-lg: 3.2rem;
+  --spacing-xs: 4rem;
+
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3.2rem;
+  --font-size-xs: 4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
+}
+
+.App {
+  font-family: sans-serif;
+}

@@ -1,3 +1,48 @@
-.Toggle {
-  
+.App-Toggle--checkbox {
+  display: none;
+}
+
+.App-Toggle--btn {
+  background-color: #e4e4e4;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow:
+    0 5px 10px 0px rgba(0, 0, 0, 0.2),
+    0 15px 20px 0px #cccccc;
+  display: inline-block;
+  height: 50px;
+  transition: all 0.05s ease-in;
+  position: relative;
+  width: 50px;
+
+  &__active {
+    box-shadow:
+      0 2px 5px 0px grey,
+      0 15px 20px 0px transparent;
+    transform: scale(0.9);
+  }
+
+  &:before {
+    content: "";
+    box-shadow: inset 0 0 0 5px #FF9900, inset 0 0 0 14px #dfdfdf;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:after {
+    content: "";
+    background-color: #FF9900;
+    box-shadow: 0 0 0 2.5px #dfdfdf;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 12px;
+  }
 }
